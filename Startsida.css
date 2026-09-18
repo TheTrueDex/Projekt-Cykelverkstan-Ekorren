@@ -1,1 +1,94 @@
+* {
+    background-color: #19211d;
+    margin: 0px;
+    padding: 0px;
+}
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: auto;
+    background-color: #19211d;
+    padding: 12px;
+    border-bottom: 1px solid rgba(132, 140, 131, 0.138);
+    margin-bottom: 2px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {  
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h2 {
+    font-family: "Karla", sans-serif;
+    color: gainsboro;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.logo p {
+    font-family: "Fragment Mono", sans-serif;
+    font-size: 10px;
+    color: rgb(132, 140, 131);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: rgb(132, 140, 131);
+}
+
+.nav-links li a:hover {
+    color: gainsboro;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    background-color: #1F281F;
+    border-top: 1px solid rgba(132, 140, 131, 0.138);
+}
+
+.footer p {
+    font-family: "Fragment Mono", sans-serif;
+    font-size: 11px;
+    color: rgb(132, 140, 131);
+    background-color: #1F281F;
+    margin: 0px 25px;
+}
