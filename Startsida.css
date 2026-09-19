@@ -1,1 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #19211d;
+}
+
+nav {
+    width: auto;
+    background-color: #19211d;
+    padding: 12px;
+    border-bottom: 1px solid rgba(132, 140, 131, 0.138);
+    margin-bottom: 2px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {  
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h2 {
+    font-family: "Karla", sans-serif;
+    color: gainsboro;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.logo p {
+    font-family: "Fragment Mono", sans-serif;
+    font-size: 10px;
+    color: rgb(132, 140, 131);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: rgb(132, 140, 131);
+}
+
+.nav-links li a:hover {
+    color: #FE8A42;
+    font-weight: bolder;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 150px;
+}
+
+.info {
+    display:flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: gainsboro;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-family: "Karla", sans-serif;
+    color: gainsboro;
+    color: rgb(132, 140, 131);
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.info-buttons {
+    display: flex;
+}
+
+.info a {
+    display: inline-block;
+    width: fit-content;
+    border: 1px solid rgba(132, 140, 131, 0.138);
+    font-family: "Karla", sans-serif;
+    color: gainsboro;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.info a:hover {
+    color: black;
+    background-color: #FE8A42;
+}
+
+.photo {
+    position: relative;
+    width: 400px;
+    height: 290px;
+    background-image: linear-gradient(to top left, #489F7C, #80AF7D) ;
+    border-radius: 15px;
+}
+
+.photo-text {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.photo-text p {
+    display: inline-block;
+    width: fit-content;
+    background-color: black;
+    color: #5BB78B;
+    text-transform: uppercase;
+    font-family: "Fragment Mono", sans-serif;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.photo-svg {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    background-color: #1F281F;
+    border-top: 1px solid rgba(132, 140, 131, 0.138);
+}
+
+.footer p {
+    font-family: "Fragment Mono", sans-serif;
+    font-size: 11px;
+    color: rgb(132, 140, 131);
+    background-color: #1F281F;
+    margin: 0px 25px;
+}
