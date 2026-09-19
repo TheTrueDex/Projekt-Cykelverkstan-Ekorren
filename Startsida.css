@@ -4,22 +4,22 @@
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+
     background-color: #19211d;
 }
 
 nav {
-    width: auto;
-    background-color: #19211d;
-    padding: 12px;
-    border-bottom: 1px solid rgba(132, 140, 131, 0.138);
-    margin-bottom: 2px;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    padding: 12px;
+    border-bottom: 1px solid rgba(132, 140, 131, 0.138);
+    margin-bottom: 2px;
+    background-color: #19211d;
 }
 
 .logo {  
@@ -37,18 +37,18 @@ nav {
 .logo h2 {
     font-family: "Karla", sans-serif;
     color: gainsboro;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: 700;
-    font-size: 20px;
     text-transform: uppercase;
 }
 
 .logo p {
     font-family: "Fragment Mono", sans-serif;
-    font-size: 10px;
     color: rgb(132, 140, 131);
-    text-transform: uppercase;
+    font-size: 10px;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -60,24 +60,25 @@ nav {
 
 .nav-links li a {
     position: relative;
+
+    font-family: "Karla", sans-serif;
+    color: rgb(132, 140, 131);
     font-size: 14px;
     font-weight: 500;
-    font-family: "Karla", sans-serif;
     text-decoration: none;
-    color: rgb(132, 140, 131);
 }
 
 .nav-links li a:hover {
     color: #FE8A42;
-    font-weight: bolder;
 }
 
 main {
-    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px 150px;
+    
+    flex: 1;
+    margin: 50px 225px;
 }
 
 .info {
@@ -87,20 +88,19 @@ main {
 
 .info h1 {
     font-family: "Big Shoulders", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     color: gainsboro;
     font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .info p {
     font-family: "Karla", sans-serif;
-    color: gainsboro;
     color: rgb(132, 140, 131);
+    font-size: 18px;
     margin-bottom: 20px;
     line-height: 25px;
-    font-size: 18px;
 }
 
 .info-buttons {
@@ -109,16 +109,18 @@ main {
 
 .info a {
     display: inline-block;
-    width: fit-content;
-    border: 1px solid rgba(132, 140, 131, 0.138);
+
     font-family: "Karla", sans-serif;
     color: gainsboro;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+    width: fit-content;
+    border: 1px solid rgba(132, 140, 131, 0.138);
+    border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 14px;
 }
 
 .info a:hover {
@@ -128,6 +130,7 @@ main {
 
 .photo {
     position: relative;
+
     width: 400px;
     height: 290px;
     background-image: linear-gradient(to top left, #489F7C, #80AF7D) ;
@@ -142,14 +145,16 @@ main {
 
 .photo-text p {
     display: inline-block;
+
+    font-family: "Fragment Mono", sans-serif;
+    font-size: 10px;
     width: fit-content;
     background-color: black;
     color: #5BB78B;
     text-transform: uppercase;
-    font-family: "Fragment Mono", sans-serif;
+
     border-radius: 10px;
     padding: 5px 10px;
-    font-size: 10px;
     margin: 10px;
 }
 
@@ -159,7 +164,111 @@ main {
     left: 10px;
 }
 
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
 
+    width: auto;
+    gap: 60px;
+    margin: 30px;
+}
+
+.service, .däck, .uthyrning {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1F281F;
+    border: 1px solid rgba(132, 140, 131, 0.138);
+    border-radius: 15px;
+    
+    padding: 30px;
+    gap: 7px;
+    width: 240px;
+    min-height: 100px;
+}
+
+.service h2, .däck h2, .uthyrning h2 {
+    font-family: "Fragment Mono", sans-serif;
+    color:#FE8A42;
+    font-size: 8px;
+}
+
+.service h3, .däck h3, .uthyrning h3 {
+    font-family: "Big Shoulders", sans-serif;
+    color:gainsboro;
+    font-size: 14px;
+}
+
+.service p, .däck p, .uthyrning p {
+    font-family: "Karla", sans-serif;
+    color: rgb(132, 140, 131);
+    font-size: 14px;
+}
+
+.service a, .däck a, .uthyrning a {
+    font-family: "Big Shoulders", sans-serif;
+    color: gainsboro;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-top: auto;
+}
+
+.service a:hover, .däck a:hover, .uthyrning a:hover {
+    color:#FE8A42;
+}
+
+.container-type2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1F281F;
+    border: 1px solid rgba(132, 140, 131, 0.138);
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 20px auto 60px;
+    width: calc(100% - 40px);
+    max-width: 1025px;
+    box-sizing: border-box;
+}
+
+.container-type2 h2 {
+    font-family: "Fragment Mono", sans-serif;
+    color: rgba(132, 140, 131, 0.693);
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.container-type2 p {
+    font-family: "Big Shoulders", sans-serif;
+    color: gainsboro;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container-type2 a {
+    font-family: "Big Shoulders", sans-serif;
+    color: gainsboro;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 1px solid rgba(132, 140, 131, 0.138);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.container-type2 a:hover {
+    background-color:#FE8A42;
+    color: black;
+}
 
 footer {
     margin-top: auto;
@@ -169,16 +278,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    width: auto;
+
     background-color: #1F281F;
     border-top: 1px solid rgba(132, 140, 131, 0.138);
+    padding: 20px;
 }
 
 .footer p {
     font-family: "Fragment Mono", sans-serif;
-    font-size: 11px;
     color: rgb(132, 140, 131);
+    font-size: 11px;
     background-color: #1F281F;
     margin: 0px 25px;
 }
