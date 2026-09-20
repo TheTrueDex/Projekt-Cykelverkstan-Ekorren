@@ -1,1 +1,14 @@
+:root{
+  --bg: #1b1e1b;
+  --bg-panel: #212421;
+  --line: #33362f;
+  --text: #e9e7df;
+  --text-dim: #9a9d92;
+  --accent: #e0793c;
+  --green: #3fae6b;
+  --orange: #e0793c;
+  --blue: #4a8fc9;
+  --olive: #a68b3f;
+}
 
+*{box-sizing: border-box;}
