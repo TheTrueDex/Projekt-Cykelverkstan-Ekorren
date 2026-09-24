@@ -217,39 +217,65 @@ h2 .bottom{
 }
 
 .history-intro{
-
+  color:var(--text-dim);
+  font-size: 0.875rem;
+  margin: 0 0 28px;
 }
 
 .timeline{
-
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 40px;
 }
 
 .timeline::before{
-
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: var(--line);
 }
 
 .timeline-item{
-
+  position: relative;
+  margin-bottom: 26px;
 }
 
 .timeline-item:last-child{
-
+  margin-bottom: 0;
 }
 
 .timeline-item::before{
-
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 6px;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
 }
 
 .timeline-year{
-
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 
 .timeline-title{
-
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 0 4px;
 }
 
 .timeline-desc{
-
+  color: var(--text-dim);
+  font-size: 0.8125rem;
+  max-width: 23rem;
+  margin: 0;
 }
 
 .stats{
@@ -290,7 +316,7 @@ h2 .bottom{
     flex-shrink: 0;
   }
   .timeline{
-    
+    padding-left: 16px;
   }
 }
  
