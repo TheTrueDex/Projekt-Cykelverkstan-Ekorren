@@ -28,7 +28,10 @@ body{
 }
 
 h2 .top{
-
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  font-weight: 700;
+  margin: 0 0 20px;
 }
 
 .top-sect{
@@ -71,7 +74,7 @@ ul.checks li::before{
 .team{
   display: flex;
   flex-direction: column;
-  gap: 18;
+  gap: 18px;
 }
 
 .mamber{
@@ -213,7 +216,9 @@ ul.checks li::before{
 }
 
 h2 .bottom{
-
+  font-size: 0.9375rem;
+  letter-spacing: 0.0475rem;
+  margin: 0 0 6px;
 }
 
 .history-intro{
@@ -304,12 +309,48 @@ h2 .bottom{
   font-weight: 700;
 }
 
+
+@media screen and (min-width:1400px) {
+  .wrap{
+    max-width: 1200px;
+    padding: 64px 48px 80px;
+  }
+  .top-sect{
+    gap: 64px;
+  }
+  .stats{
+    padding: 22px 16px;
+  }
+}
+
+@media screen and (max-width:900px){
+  .wrap{
+    padding: 40px 28px 50px;
+  }
+  .top-sect{
+    gap: 32px;
+  } 
+}
+
+@media screen and (max-width:640px){
+  .top-sect{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .wrap{
+    padding: 32px 20px 44px;
+  }
+  .stats{
+    padding: 16px 8px;
+  }
+}
+
 @media screen and (max-width:480px){
   .wrap{
     padding: 28px 16px 40px;
   }
   h2{
-
+    font-size: 0.9375rem;
   }
   .bread-text, ul.checks li, .desc-1, .desc-2, .desc-3, .desc-4, .history-intro, .timeline-desc{
     max-width: none;
@@ -330,32 +371,4 @@ h2 .bottom{
     padding-left: 16px;
   }
 }
- 
-@media screen and (max-width:640px){
-  .top-sect{
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .wrap{
-    padding: 32px 20px 44px;
-  }
-  .stats{
-    padding: 16px 8px;
-  }
-}
 
-@media screen and (max-width:900px){
-  .wrap{
-    padding: 40px 28px 50px;
-  }
-  .top-sect{
-    gap: 32px;
-  } 
-}
-
-/* @media (max-width:480px){
-
-@media only screen and (max-width:480px){
-  .wrap{ padding: 40px 28px 50px; }
-  .top-section{ gap: 32px; }
-} *\ 
