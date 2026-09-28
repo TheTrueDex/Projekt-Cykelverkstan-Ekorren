@@ -231,6 +231,8 @@ main .photo-svg {
 .container-type2 a {
   color: gainsboro;
   font-family: "Big Shoulders", sans-serif;
+  border: 1px solid rgba(132, 140, 131, 0.138);
+  border-radius: 10px;
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
@@ -267,7 +269,6 @@ footer p {
     align-items: stretch;
     gap: 28px;
     margin: 20px;
-    padding: auto;
   }
   nav {
     justify-content: space-between;
@@ -281,7 +282,6 @@ footer p {
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 10px 18px;
-    margin: 1;
   }
   main .photo {
     flex: none;
@@ -292,7 +292,6 @@ footer p {
   }
   .container-type2 {
     flex-wrap: wrap;
-    width: 1;
   }
   .footer {
     margin: 0;
