@@ -1,0 +1,331 @@
+@use "_mixin.scss" as *;
+@use "_variables.scss" as *;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-color: $bg-color;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 12px;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 2px;
+    background-color: $second-bg-color;
+
+    .logo {  
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left: 25px;
+    }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .logo h2 {
+                font-family: "Karla", sans-serif;
+                color: $btn-color;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .logo p {
+                @include paragraph-style;
+                font-size: 10px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        margin-right: 25px;
+    }
+
+        .nav-links li a {
+            @include text-style;
+            position: relative;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+}
+
+        .nav-links li a:hover {
+            color: $accent-color;
+        }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    
+    flex: 1;
+    width: calc(100% - 40px);
+    max-width: 1025px;
+    margin: 50px auto;
+
+    .info {
+        display:flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+    }
+
+        .info h1 {
+            @include rubrik-style;
+            font-size: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            @include text-style;
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
+
+        .info-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        }
+
+        .info a {
+            @include border;
+            display: inline-block;
+            font-family: "Karla", sans-serif;
+            color: $btn-color;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            width: fit-content;
+            padding: 10px;
+            margin-right: 0;
+        }
+
+        .info a:hover {
+            color: black;
+            background-color: $accent-color;
+        }
+
+    .photo {
+        position: relative;
+        flex: 0 1 400px;
+        width: 100%;
+        max-width: 400px;
+        height: 290px;
+        background-image: linear-gradient(to top left, #489F7C, #80AF7D) ;
+        border-radius: 15px;
+    }
+
+        .photo-text {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+            .photo-text p {
+                display: inline-block;
+                font-family: "Fragment Mono", sans-serif;
+                font-size: 10px;
+                width: fit-content;
+                background-color: black;
+                color: #5BB78B;
+                text-transform: uppercase;
+                border-radius: 10px;
+                padding: 5px 10px;
+                margin: 10px;
+            }
+
+        .photo-svg {
+            position: absolute;
+        bottom: 10px;
+        left: 10px;
+        }
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    gap: 30px;
+    width: calc(100% - 40px);
+    max-width: 1025px;
+    margin: 30px auto;
+
+    .service, .däck, .uthyrning {
+        @include border;
+        display: flex;
+        flex-direction: column;
+        background-color: $second-bg-color;
+        padding: 30px;
+        gap: 7px;
+        flex: 1 1 240px;
+        min-height: 100px;
+    }
+
+        .service h2, .däck h2, .uthyrning h2 {
+            font-family: "Fragment Mono", sans-serif;
+            color: $accent-color;
+            font-size: 8px;
+        }
+
+        .service h3, .däck h3, .uthyrning h3 {
+            @include rubrik-style;
+            font-size: 14px;
+        }
+
+        .service p, .däck p, .uthyrning p {
+            @include text-style;
+            font-size: 14px;
+        }
+
+        .service a, .däck a, .uthyrning a {
+            @include rubrik-style;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bolder;
+            margin-top: auto;
+        }
+
+        .service a:hover, .däck a:hover, .uthyrning a:hover {
+            color: $accent-color;
+        }
+}
+
+.container-type2 {
+    @include border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $second-bg-color;
+    padding: 20px;
+    margin: 30px auto 60px;
+    width: calc(100% - 40px);
+    max-width: 1025px;
+    box-sizing: border-box;
+    gap: 24px;
+
+    h2 {
+        @include paragraph-style;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+    }
+
+    p {
+        @include rubrik-style;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    a {
+        @include rubrik-style;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+
+    a:hover {
+        background-color: $accent-color;
+        color: black;
+    }
+}
+
+footer {
+    margin-top: auto;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $second-bg-color;
+        border-top: 1px solid $border-color;
+        padding: 20px;
+    }
+
+        p {
+            @include paragraph-style;
+            font-size: 11px;
+            background-color: $second-bg-color;
+            margin: 0px 25px;
+        }
+}
+
+//iPhone Responsitivity//
+@media screen and (max-width: 480px) {
+   main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 28px;
+        margin: 20px;
+        padding: auto;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        width: 70%;
+        margin: 0;
+    }
+
+    .nav-links {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin: 1;
+    }
+
+    main .photo {
+        flex: none;
+        width: 100%;
+        max-width: none;
+        height: 280px;
+        order: -1;
+    }
+
+    .container-type2 {
+        flex-wrap: wrap;
+        width: 1;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 10px 0 10px 0;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

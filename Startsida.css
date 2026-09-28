@@ -1,356 +1,305 @@
+@charset "UTF-8";
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-    background-color: #19211d;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #19211d;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    padding: 12px;
-    border-bottom: 1px solid rgba(132, 140, 131, 0.138);
-    margin-bottom: 2px;
-    background-color: #19211d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid rgba(132, 140, 131, 0.138);
+  margin-bottom: 2px;
+  background-color: #1F281F;
 }
-
-.logo {  
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: 25px;
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 25px;
 }
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
+nav .logo-text {
+  display: flex;
+  flex-direction: column;
 }
-
-.logo h2 {
-    font-family: "Karla", sans-serif;
-    color: gainsboro;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    text-transform: uppercase;
+nav .logo h2 {
+  font-family: "Karla", sans-serif;
+  color: gainsboro;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
-.logo p {
-    font-family: "Fragment Mono", sans-serif;
-    color: rgb(132, 140, 131);
-    font-size: 10px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+nav .logo p {
+  color: rgb(132, 140, 131);
+  font-family: "Fragment Mono", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    margin-right: 25px;
+nav .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin-right: 25px;
 }
-
-.nav-links li a {
-    position: relative;
-
-    font-family: "Karla", sans-serif;
-    color: rgb(132, 140, 131);
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
+nav .nav-links li a {
+  color: rgb(132, 140, 131);
+  font-family: "Karla", sans-serif;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
 }
-
-.nav-links li a:hover {
-    color: #FE8A42;
+nav .nav-links li a:hover {
+  color: #FE8A42;
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    
-    flex: 1;
-    width: calc(100% - 40px);
-    max-width: 1025px;
-    margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+  width: calc(100% - 40px);
+  max-width: 1025px;
+  margin: 50px auto;
 }
-
-.info {
-    display:flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 0;
+main .info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
-
-.info h1 {
-    font-family: "Big Shoulders", sans-serif;
-    color: gainsboro;
-    font-size: 40px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+main .info h1 {
+  color: gainsboro;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
-
-.info p {
-    font-family: "Karla", sans-serif;
-    color: rgb(132, 140, 131);
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 25px;
+main .info p {
+  color: rgb(132, 140, 131);
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 25px;
 }
-
-.info-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+main .info-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-
-.info a {
-    display: inline-block;
-
-    font-family: "Karla", sans-serif;
-    color: gainsboro;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-
-    width: fit-content;
-    border: 1px solid rgba(132, 140, 131, 0.138);
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 0;
+main .info a {
+  border: 1px solid rgba(132, 140, 131, 0.138);
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "Karla", sans-serif;
+  color: gainsboro;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin-right: 0;
 }
-
-.info a:hover {
-    color: black;
-    background-color: #FE8A42;
+main .info a:hover {
+  color: black;
+  background-color: #FE8A42;
 }
-
-.photo {
-    position: relative;
-
-    flex: 0 1 400px;
-    width: 100%;
-    max-width: 400px;
-    height: 290px;
-    background-image: linear-gradient(to top left, #489F7C, #80AF7D) ;
-    border-radius: 15px;
+main .photo {
+  position: relative;
+  flex: 0 1 400px;
+  width: 100%;
+  max-width: 400px;
+  height: 290px;
+  background-image: linear-gradient(to top left, #489F7C, #80AF7D);
+  border-radius: 15px;
 }
-
-.photo-text {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+main .photo-text {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
-
-.photo-text p {
-    display: inline-block;
-
-    font-family: "Fragment Mono", sans-serif;
-    font-size: 10px;
-    width: fit-content;
-    background-color: black;
-    color: #5BB78B;
-    text-transform: uppercase;
-
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin: 10px;
+main .photo-text p {
+  display: inline-block;
+  font-family: "Fragment Mono", sans-serif;
+  font-size: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: black;
+  color: #5BB78B;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 10px;
 }
-
-.photo-svg {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+main .photo-svg {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 .containers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: stretch;
-
-    gap: 30px;
-    width: calc(100% - 40px);
-    max-width: 1025px;
-    margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+  width: calc(100% - 40px);
+  max-width: 1025px;
+  margin: 30px auto;
 }
-
-.service, .däck, .uthyrning {
-    display: flex;
-    flex-direction: column;
-
-    background-color: #1F281F;
-    border: 1px solid rgba(132, 140, 131, 0.138);
-    border-radius: 15px;
-    
-    padding: 30px;
-    gap: 7px;
-    flex: 1 1 240px;
-    min-height: 100px;
+.containers .service, .containers .däck, .containers .uthyrning {
+  border: 1px solid rgba(132, 140, 131, 0.138);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F281F;
+  padding: 30px;
+  gap: 7px;
+  flex: 1 1 240px;
+  min-height: 100px;
 }
-
-.service h2, .däck h2, .uthyrning h2 {
-    font-family: "Fragment Mono", sans-serif;
-    color:#FE8A42;
-    font-size: 8px;
+.containers .service h2, .containers .däck h2, .containers .uthyrning h2 {
+  font-family: "Fragment Mono", sans-serif;
+  color: #FE8A42;
+  font-size: 8px;
 }
-
-.service h3, .däck h3, .uthyrning h3 {
-    font-family: "Big Shoulders", sans-serif;
-    color:gainsboro;
-    font-size: 14px;
+.containers .service h3, .containers .däck h3, .containers .uthyrning h3 {
+  color: gainsboro;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 14px;
 }
-
-.service p, .däck p, .uthyrning p {
-    font-family: "Karla", sans-serif;
-    color: rgb(132, 140, 131);
-    font-size: 14px;
+.containers .service p, .containers .däck p, .containers .uthyrning p {
+  color: rgb(132, 140, 131);
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
 }
-
-.service a, .däck a, .uthyrning a {
-    font-family: "Big Shoulders", sans-serif;
-    color: gainsboro;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: bolder;
-    margin-top: auto;
+.containers .service a, .containers .däck a, .containers .uthyrning a {
+  color: gainsboro;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: auto;
 }
-
-.service a:hover, .däck a:hover, .uthyrning a:hover {
-    color:#FE8A42;
+.containers .service a:hover, .containers .däck a:hover, .containers .uthyrning a:hover {
+  color: #FE8A42;
 }
 
 .container-type2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #1F281F;
-    border: 1px solid rgba(132, 140, 131, 0.138);
-    border-radius: 15px;
-
-    padding: 20px;
-    margin: 30px auto 60px;
-    width: calc(100% - 40px);
-    max-width: 1025px;
-    box-sizing: border-box;
-    gap: 24px;
+  border: 1px solid rgba(132, 140, 131, 0.138);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F281F;
+  padding: 20px;
+  margin: 30px auto 60px;
+  width: calc(100% - 40px);
+  max-width: 1025px;
+  box-sizing: border-box;
+  gap: 24px;
 }
-
 .container-type2 h2 {
-    font-family: "Fragment Mono", sans-serif;
-    color: rgba(132, 140, 131, 0.693);
-    font-size: 10px;
-    text-transform: uppercase;
-    margin-bottom: 3px;
+  color: rgb(132, 140, 131);
+  font-family: "Fragment Mono", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
 }
-
 .container-type2 p {
-    font-family: "Big Shoulders", sans-serif;
-    color: gainsboro;
-    font-size: 16px;
-    font-weight: bold;
+  color: gainsboro;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
-
 .container-type2 a {
-    font-family: "Big Shoulders", sans-serif;
-    color: gainsboro;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: bold;
-
-    border: 1px solid rgba(132, 140, 131, 0.138);
-    border-radius: 10px;
-    padding: 10px 20px;
+  color: gainsboro;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
 }
-
 .container-type2 a:hover {
-    background-color:#FE8A42;
-    color: black;
+  background-color: #FE8A42;
+  color: black;
 }
 
 footer {
-    margin-top: auto;
+  margin-top: auto;
 }
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #1F281F;
-    border-top: 1px solid rgba(132, 140, 131, 0.138);
-    padding: 20px;
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F281F;
+  border-top: 1px solid rgba(132, 140, 131, 0.138);
+  padding: 20px;
 }
-
-.footer p {
-    font-family: "Fragment Mono", sans-serif;
-    color: rgb(132, 140, 131);
-    font-size: 11px;
-    background-color: #1F281F;
-    margin: 0px 25px;
+footer p {
+  color: rgb(132, 140, 131);
+  font-family: "Fragment Mono", sans-serif;
+  font-size: 11px;
+  background-color: #1F281F;
+  margin: 0px 25px;
 }
 
 @media screen and (max-width: 480px) {
-   main {
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        gap: 28px;
-        margin: 20px;
-        padding: auto;
-    }
-    
-    nav {
-        justify-content: space-between;
-    }
-
-    .logo {
-        justify-content: flex-start;
-        width: 70%;
-        margin: 0;
-    }
-
-    .nav-links {
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        gap: 10px 18px;
-        margin: 1;
-    }
-
-
-    .photo {
-        flex: none;
-        width: 100%;
-        max-width: none;
-        height: 240px;
-        order: -1;
-    }
-
-    .container-type2 {
-        flex-wrap: wrap;
-        width: 1;
-    }
-
-    .footer {
-        margin: 0;
-        padding: 10px 0 10px 0;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 5px;
-    }
-}
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    margin: 20px;
+    padding: auto;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .logo {
+    justify-content: flex-start;
+    width: 70%;
+    margin: 0;
+  }
+  .nav-links {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin: 1;
+  }
+  main .photo {
+    flex: none;
+    width: 100%;
+    max-width: none;
+    height: 280px;
+    order: -1;
+  }
+  .container-type2 {
+    flex-wrap: wrap;
+    width: 1;
+  }
+  .footer {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}/*# sourceMappingURL=Startsida.css.map */

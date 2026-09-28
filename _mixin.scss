@@ -1,0 +1,19 @@
+@mixin paragraph-style {
+    color: rgb(132, 140, 131);
+    font-family: "Fragment Mono", sans-serif;
+}
+
+@mixin rubrik-style {
+    color: gainsboro;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+@mixin text-style {
+    color: rgb(132, 140, 131);
+    font-family: "Karla", sans-serif;
+}
+
+@mixin border {
+    border: 1px solid rgba(132, 140, 131, 0.138);
+    border-radius: 10px;
+}
