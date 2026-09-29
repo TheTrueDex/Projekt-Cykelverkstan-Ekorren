@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tjänster & Priser</title>
-    <link rel="stylesheet" href="Tjänster-och-Priser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Big+Shoulders:wght@700&family=Karla:wght@400;700&family=Fragment+Mono&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="Base.css">
+    <link rel="stylesheet" href="Tjänster-och-Priser.css">
 </head>
 <body>
     <header>
+
         <div class="logo">
-            <h1>EKORREN</h1>
-            <p>Cykelverkstad & Uthyrning</p>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bike-icon" viewBox="0 0 16 16">
+            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"/>
+            </svg>
+
+            <div>
+                <h1>EKORREN</h1>
+                <p>Cykelverkstad & Uthyrning</p>
+            </div>
         </div>
 
         <nav>
@@ -25,13 +38,165 @@
     </header>
 
     <main>
-        <div class="head">
+        <section class="head">
             <h2>Tjänster & Priser</h2>
-            <p>Alla priser inkluderar arbetstid. Behöver din cykel mer än en sak? Fråga oss om paketpris.</p>
-        </div>
 
+            <p>Alla priser inkluderar arbetstid. Behöver din cykel mer än en sak? Fråga oss om paketpris.</p>
+        </section>
+    
+        <section class="steg">
+            <div class="steg-kort">
+                <p class="steg-nummer">
+                    01 
+                </p>
+                <h3>
+                    Boka eller kom förbi
+                </h3>
+                <p>
+                    Ring, mejla eller kom in på öppettid - beskriv vad cykeln behöver så ger vi en tidsuppskattning direkt.
+                </p>
+            </div>
+            
+            <div class="steg-kort">
+                <p class="steg-nummer">
+                    02
+                </p>
+                <h3>
+                    Vi bedömer & offererar
+                </h3>
+                <p>
+                    Hittar vi mer som behöver göras ringer vi alltid innan vi fortsätter - inga överraskningar på notan.
+                </p>
+            </div>
+
+            <div class="steg-kort">
+                <p  class="steg-nummer">
+                    03
+                </p>
+                <h3>
+                    Hämta ut, klar
+                </h3>
+                <p>
+                    De flesta jobb är klara samma dag. Vi hör av oss så fort cykeln är redo att hämtas.
+                </p>
+            </div>
+
+        </section>
         
+        <section class="pris-lista">
+            <div class="service">
+                <div class="service-text">
+                    <h3>
+                        Grundservice
+                    </h3>
+                    <p>
+                        Justering av bromsar och växlar, smörjning av keja, koll av däcktryck och lyse.
+                    </p>
+                </div>
+                <p class="pris">
+                    595 kr
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-text">
+                    <h3>
+                        Storservice
+                    </h3>
+                    <p>
+                       Grundservice plus rengöring av drivlina, kontroll av lager och centrering av hjul.
+                    </p>
+                </div>
+                <p class="pris">
+                    995 kr
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-text">
+                    <h3>
+                        Punktering
+                    </h3>
+                    <p>
+                        Lagning eller byte av slang, framhjul eller bakhjul.
+                    </p>
+                </div>
+                <p class="pris">
+                    från 150 kr
+                </p>
+            </div>
+
+             <div class="service">
+                <div class="service-text">
+                    <h3>
+                        Bromsjustering
+                    </h3>
+                    <p>
+                        Justering eller byte av bromsbelägg/bromsvajer, fram och bak.
+                    </p>
+                </div>
+                <p class="pris">
+                    195 kr
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-text">
+                    <h3>
+                        Cykeluthyrning
+                    </h3>
+                    <p>
+                        Stadscykel med hjälm och lås. Lådcykel efter tillgång - ring gärna innan.
+                    </p>
+                </div>
+                <p class="pris">
+                    150 kr/dag
+                </p>
+            </div>
+        </section>
+
+        <section class="viktig">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="info-icon">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z" clip-rule="evenodd" />
+            </svg>
+
+            <p>
+                Verkstaden nås via ramp från gatan och har en bred dörr utan tröskel - bra att veta om du kommer med barnvagn, rullstol eller lådcykel.
+            </p>
+        </section>
+
+        <section class="info">
+            <div>
+                <h3>Garanti</h3>
+                <p>3 månader på arbetet</p>
+            </div>
+
+            <div>
+                <h3>Snittväntetid</h3>
+                <p>samma dag</p>
+            </div>
+
+            <div>
+                <h3>Hämta & lämna</h3>
+                <p>mot avgift, inom Söder</p>
+            </div>
+
+            <div>
+                <h3>Betalning</h3>
+                <p>kort, Swish, faktura</p>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <p>
+            © Cykelverkstan Ekorren
+        </p>
+        <p>
+            Skånegatan 61 · 08-500 213 40
+        </p>
+    </footer>
         
 </body>
 </html>

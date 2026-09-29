@@ -1,1 +1,77 @@
+body {
+    margin: 0;
+    background-color: #121d19;
+    color: #ffffff;
+    font-family: "Karla", sans-serif;
+}
 
+h1, h2, h3 {
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #172621;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bike-icon {
+    width: 30px;
+    height: 30px;
+    color: #42b98b;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #172621;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 25px 60px;
+}
+
+footer p {
+    margin: 0;
+}
